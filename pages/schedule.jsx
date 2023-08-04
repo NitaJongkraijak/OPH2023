@@ -15,7 +15,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { m } from 'framer-motion'
 import Head from 'next/head'
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { motion } from 'framer-motion'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 
@@ -169,6 +169,7 @@ const timetb = [
         time: '13.00 - 16.00 น.',
         act: [
           {
+            const: [show,setShow] = useState(false),
             title: 'MWIT Challenge ภาคบ่าย',
             desc: 'กิจกรรม STEM Challenge ที่จะให้ผู้เข้าร่วมได้ฝึกทักษะการออกแบบสิ่งประดิษฐ์เพื่อแก้ปัญหาตามที่ได้รับมอบหมาย แบ่งออกเป็น 2 รอบ รอบละ 90 นาที่ รับ 30 ทีม ทีมละ 3 คน ต่อรอบ เป็นกิจกรรมแบบ Walk in'
           },
